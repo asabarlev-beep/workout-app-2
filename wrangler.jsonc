@@ -1,0 +1,13 @@
+// Cloudflare Worker "workout-app-2" — a separate copy of the workout log for a second person (own data, own password).
+// Deployed automatically by Cloudflare Workers Builds on every push to main.
+{
+  "name": "workout-app-2",
+  "main": "src/worker.js",
+  "compatibility_date": "2025-09-01",
+  // Static files (the app itself). Served directly; anything not found here goes to the worker (/api/*).
+  "assets": { "directory": "./public" },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "workout-2", "database_id": "PASTE_DATABASE_ID_HERE" }
+  ]
+  // Secret APP_PASSWORD is set in the Cloudflare dashboard — never put it in this file.
+}
