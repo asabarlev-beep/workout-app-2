@@ -7,7 +7,7 @@
   // Static files (the app itself). Served directly; anything not found here goes to the worker (/api/*).
   "assets": { "directory": "./public" },
   "d1_databases": [
-    { "binding": "DB", "database_name": "workout-2", "database_id": "PASTE_DATABASE_ID_HERE" }
+    { "binding": "DB", "database_name": "workout-2", "database_id": "586cebfa-39b6-488e-8062-3db7e273825c" }
   ]
   // Secret APP_PASSWORD is set in the Cloudflare dashboard — never put it in this file.
 }
